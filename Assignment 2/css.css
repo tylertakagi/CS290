@@ -8,34 +8,6 @@ header {
     background-image: url("https://www.phyramid.com/images/blog/making-phyramid-coms-procedurally-rendered-3d-header/header-background-indexed.png")
 }    
 
-nav {
-    height: 6em;
-    text-align: center;
-    position: relative;
-    top: 5%;
-}
-
-nav a {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    display: inline-block;
-    border: solid 1px;
-    margin: 0 auto;
-    padding: .25em .75em;
-    position: relative;
-    top: .5em;
-    text-decoration: none;
-    text-decoration-color: black;
-    background-color: lightgrey;
-}
-
-nav a:hover {
-    background-color: darkgrey;
-}
-
-nav a:link {
-    color: black;
-}
-
 
 /****************
 Main Article

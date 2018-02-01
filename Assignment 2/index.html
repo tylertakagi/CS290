@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Lamborghini</title>
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Assignment 3 | An exercise in CSS + Javascript </title>
+    <link rel="stylesheet" type="text/css" href="styles/assign3-styles.css">
+    <meta charset="utf-8">
+    <script src="scripts/script.js"></script>
 </head>
-<body background="http://wallpul.info/i/2016/12/wallpapers-black-4k-wallpaper-1080p.jpg">
-	<header>
-		<nav>
-            <a href="http://people.oregonstate.edu/~takagit/assignment-2.html">Home</a>
-            <a href="http://people.oregonstate.edu/~takagit/assignment-2.html">Huracan</a>
-            <a href="http://people.oregonstate.edu/~takagit/assignment-2.html">Centenario</a>
-            <a href="http://people.oregonstate.edu/~takagit/assignment-2.html">Urus</a>
-            <a href="http://people.oregonstate.edu/~takagit/assignment-2.html">About</a>
-            <a href="http://people.oregonstate.edu/~takagit/assignment-2.html">Careers</a>
-		</nav>
-	</header>
-    <div class="wrapperMain">
-        <article class="articleMain">
-            <h1>
-                Lamborghini Aventador
-            </h1>
-            <br/><br/><br/>
-            <img src="http://st.motortrend.com/uploads/sites/10/2016/02/2015-Lamborghini-Aventador-LP750-4-SV-front-top-view.jpg">
-            <p>
-            The Lamborghini Aventador is a mid-engined sports car produced by the Italian manufacturer Lamborghini.
-            Launched on 28 February 2011 at the Geneva Motor Show, five months after its initial unveiling in Sant'Agata Bolognese, the vehicle, internally codenamed LB834, was designed to replace the then-decade-old Murcielago as the new flagship model. Soon after the Aventador unveiling, Lamborghini announced that it had already sold over 12 of the production vehicles, with deliveries starting in the second half of 2011. By March 2016, Lamborghini had already built 5,000 Aventadors, taking five years to achieve this milestone. In keeping with Lamborghini tradition, the Aventador is named after a fighting bull. Aventador was a bull that fought particularly valiantly in the bull ring of Zaragoza, Spain in 1993. The bull which the Aventador is named after earned the Trofeo de la Pena La Madronera for its courage in the arena.<br> </br>
-            Production of the Aventador was planned to be limited to 4,000 vehicles (4,099 Murcielagos were built); however, in 2016, it achieved the 5,000 unit milestone. The molds used to make the carbon-fibre monocoque are expected to last 500 molds each and only 8 have been made. The base price of the Aventador is US$393,695.
-
-            The car's shape borrows heavily from Lamborghini's limited-edition Reventon and their Estoque concept car.
-            The vehicle was unveiled at Lummus Park, Miami, followed by Miami International Airport, followed by Auto China 2014 (with Nazionale configuration via Lamborghini Ad Personam personalization program). The Lamborghini Aventador starred in Transformers: Age of Extinction as Lockdown, the film's main antagonist.
-            </p>
-            <ul>
-                <li>Displacement: 6,498 cc (396.5 cu in)</li>
-                <li>Max Power: 700 PS (510 kW; 690 bhp) @ 8,250 rpm</li>
-                <li>Min. Power to Weight: 378 PS (278 kW; 373 bhp) per tonne </li>
-                <li>Max. Torque: 509 lb⋅ft (690 N⋅m) @ 5,500 rpm</li>
-                <li>CO2 Emissions: 398 g/km</li>
-                <li>Combined Fuel Consumption: 17.2 L/100 km (16.4 mpg imp; 13.7 mpg us)</li>
-            </ul>
-        </article>
+<body>
+  <header>
+    <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CAREERS</a>
+        <ul class="sub1">
+          <li><a href="#">Full-Time</a></li>
+          <li><a href="#">Internships</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PRODUCTS</a>
+        <ul class="sub1">
+          <li><a href="#">GeForce GTX 1080</a>
+          <li><a href="#">GeForce GTX 1060</a>
+          <li><a href="#">GeForce GTX 980</a>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  </header>
+  <div id="container">
+  <div id="content">
+    <h1>NVIDIA : GTX 1080TI</h1>
+    <div id="info">
+      <div class="prezi-content">
+        <img name="slide" width="400px" height="234px">
+      </div>
+      <textarea id="textarea1" style="width:600px; height:100px;"></textarea>
+      <button type="button" id="buttonOne" onclick="updateFirstText()">Update</button>
+      <p id="des" class="des" ondblclick="appearOne()"> The Lamborghini Aventador is a mid-engined sports car produced by the Italian manufacturer Lamborghini. Launched on 28 February 2011 at the Geneva Motor Show, five months after its initial unveiling in Sant'Agata Bolognese, the vehicle, internally codenamed LB834, was designed to replace the then-decade-old Murcielago as the new flagship model. Soon after the Aventador unveiling, Lamborghini announced that it had already sold over 12 of the production vehicles, with deliveries starting in the second half of 2011. By March 2016, Lamborghini had already built 5,000 Aventadors, taking five years to achieve this milestone. In keeping with Lamborghini tradition, the Aventador is named after a fighting bull. Aventador was a bull that fought particularly valiantly in the bull ring of Zaragoza, Spain in 1993. The bull which the Aventador is named after earned the Trofeo de la Pena La Madronera for its courage in the arena.</p>
+      <textarea id="textarea2" style="width:600px; height:100px;"></textarea>
+      <button type="button" id="buttonTwo" onclick="updateSecondText()">Update</button>
+      <p id="des-two" class="des-two" ondblclick="appearTwo()">Production of the Aventador was planned to be limited to 4,000 vehicles (4,099 Murcielagos were built); however, in 2016, it achieved the 5,000 unit milestone. The molds used to make the carbon-fibre monocoque are expected to last 500 molds each and only 8 have been made. The base price of the Aventador is US$393,695. The car's shape borrows heavily from Lamborghini's limited-edition Reventon and their Estoque concept car. The vehicle was unveiled at Lummus Park, Miami, followed by Miami International Airport, followed by Auto China 2014 (with Nazionale configuration via Lamborghini Ad Personam personalization program). The Lamborghini Aventador starred in Transformers: Age of Extinction as Lockdown, the film's main antagonist.</p>
     </div>
-	<footer>
-		Assignment 2 created by Kenney Hersch and Tyler Takagi.
-	</footer>
+    <div id="tile-container">
+      <h2>Chameleon icons</h2>
+      <div id="control"><h4 onclick="resetAll()">RESET</h4><h4 onclick="clearAll()">CLEAR</h4></div>
+      <div id="tile-wrapper">
+        <div id="tile1" class="tiles"><p class="close-icon" onclick="closeBox('tile1')">X</p><img src="images/icon.png" class="tile-img"><p class="caption">Figure 1</p></div>
+        <div id="tile2" class="tiles"><p class="close-icon" onclick="closeBox('tile2')">X</p><img src="images/icon2.png" class="tile-img"><p class="caption">Figure 2</p></div>
+        <div id="tile3" class="tiles"><p class="close-icon" onclick="closeBox('tile3')">X</p><img src="images/icon3.png" class="tile-img"><p class="caption">Figure 3</p></div>
+        <div id="tile4" class="tiles"><p class="close-icon" onclick="closeBox('tile4')">X</p><img src="images/icon4.png" class="tile-img"><p class="caption">Figure 4</p></div>
+        <div id="tile5" class="tiles"><p class="close-icon" onclick="closeBox('tile5')">X</p><img src="images/icon5.png" class="tile-img"><p class="caption">Figure 5</p></div>
+        <div id="tile6" class="tiles"><p class="close-icon" onclick="closeBox('tile6')">X</p><img src="images/icon6.png" class="tile-img"><p class="caption">Figure 6</p></div>
+        <div id="tile7" class="tiles"><p class="close-icon" onclick="closeBox('tile7')">X</p><img src="images/icon7.png" class="tile-img"><p class="caption">Figure 7</p></div>
+        <div id="tile8" class="tiles"><p class="close-icon" onclick="closeBox('tile8')">X</p><img src="images/icon8.png" class="tile-img"><p class="caption">Figure 8</p></div>
+        <div id="tile9" class="tiles"><p class="close-icon" onclick="closeBox('tile9')">X</p><img src="images/icon9.png" class="tile-img"><p class="caption">Figure 9</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <h3>Created by Tyler Takagi and Kenny Hersch for assignment 3</h3>
+</footer>
 </body>
 </html>
